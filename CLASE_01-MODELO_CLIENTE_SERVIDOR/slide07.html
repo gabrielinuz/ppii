@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Servidor HTTP en C++</title>
+</head>
+<body>
+    <!--Aquí va la sección de la diapositiva-->
+    <section class="slide">
+        <h1>07. JSON Plano vs. RESTful HATEOAS</h1>
+        <div class="comparison-container">
+            <div class="code-block">
+                <h4>API Tradicional (JSON)</h4>
+                <pre>
+    {
+      "id": 101,
+      "user": "Gabriel",
+      "status": "active"
+    }
+                </pre>
+                <small>El cliente debe "adivinar" la URL para editar o borrar.</small>
+            </div>
+            <div class="code-block accent-border">
+                <h4>API con HATEOAS (Fielding)</h4>
+                <pre>
+    {
+      "id": 101,
+      "user": "Gabriel",
+      "links": [
+        {"rel": "self", "href": "/users/101"},
+        {"rel": "delete", "href": "/users/101", "method": "DELETE"},
+        {"rel": "update", "href": "/users/101", "method": "PUT"}
+      ]
+    }
+                </pre>
+                <small>El servidor guía al cliente sobre qué puede hacer.</small>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

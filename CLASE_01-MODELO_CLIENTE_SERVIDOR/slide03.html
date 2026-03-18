@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>NodeJS vs Servidores Convencionales</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>03. NodeJS: I/O No Bloqueante vs. Apache</h1>
+        <div class="content-grid">
+            <article>
+                <p>A diferencia de servidores como <strong>Apache HTTP Server</strong> que asignan un "Thread" (hilo) por cada conexión (limitado por la RAM), Node utiliza <strong>libuv</strong>.</p>
+                <ul>
+                    <li><strong>Single Threaded:</strong> No hay cambios de contexto de CPU entre hilos.</li>
+                    <li><strong>Asincronía:</strong> Las operaciones de red o disco se delegan al SO, liberando el bucle principal.</li>
+                </ul>
+            </article>
+            <aside class="academic-ref">
+                <strong>Referencia Académica:</strong>
+                <p>Tilkov, S., & Vinoski, S. (2010). <em>Node.js: Using JavaScript to Build High-Performance Network Programs</em>. IEEE Internet Computing.</p>
+            </aside>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

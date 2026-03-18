@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Servidor HTTP en C++</title>
+</head>
+<body>
+    <section class="slide">
+        <h1>02. El Servidor HTTP desde la Base (C++)</h1>
+        <div class="content-grid">
+            <article>
+                <p>Un servidor HTTP en C++ (usando `cpp-httplib`) opera directamente sobre <strong>POSIX Sockets</strong>. La lógica de fondo implica:</p>
+                <ul id="steps-list">
+                    <li><strong>TCP Three-way Handshake:</strong> El servidor debe gestionar el establecimiento de la conexión antes de recibir un solo byte de HTTP.</li>
+                    <li><strong>Parsing Serial:</strong> Se recibe un flujo de bytes que debe ser parseado según la gramática de la RFC 7230.</li>
+                </ul>
+            </article>
+            <aside class="academic-ref">
+                <strong>Referencia Académica:</strong>
+                <p>Stevens, W. R. (1998). <em>UNIX Network Programming</em>. Prentice Hall. (Buscar en Google Académico para entender la gestión de descriptores de archivos y sockets).</p>
+            </aside>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>

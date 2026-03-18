@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Servidor HTTP en C++</title>
+</head>
+<body>
+    <!--Aquí va la sección de la diapositiva-->
+    <section class="slide">
+        <h1>04. NodeJS: Arquitectura y Event Loop</h1>
+        <div class="content-grid">
+            <article>
+                <p>Node utiliza un modelo de <strong>bucle de eventos único</strong>. Mientras que Apache crea un hilo por cliente, Node delega tareas pesadas a la librería <strong>libuv</strong>.</p>
+                <ul id="node-logic">
+                    </ul>
+            </article>
+            <figure>
+                <img src="node04.png" class="node-diagram" alt="Diagrama detallado del Event Loop y Libuv">
+                <figcaption>Arquitectura interna de Node.js: El Event Loop y la delegación a hilos de apoyo (Libuv).</figcaption>
+            </figure>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="../transitions.js"></script>
+</body>
+</html>
