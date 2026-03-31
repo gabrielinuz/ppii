@@ -1,0 +1,5 @@
+TDD en Waterfall: Es difícil porque Waterfall asume que el código se escribe después del diseño completo. TDD requiere una mentalidad iterativa. La dificultad principal sería la resistencia al cambio en la fase de "Codificación", donde el tiempo suele ser escaso.
+
+Eficiencia en Pair Programming: Se reduce drásticamente el costo de mantenimiento futuro. Al haber dos pares de ojos, se evitan "deudas técnicas" y errores que en producción costarían 10 veces más arreglar. Además, elimina el "Silo de conocimiento".
+
+Kanban en el ISFT 151: Ideal para proyectos de soporte o mantenimiento de sistemas de la institución donde las tareas entran de forma imprevista y no se pueden planificar en Sprints rígidos de 2 semanas.

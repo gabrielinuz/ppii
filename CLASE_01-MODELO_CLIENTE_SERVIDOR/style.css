@@ -68,16 +68,62 @@ button:hover { opacity: 0.8; }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* figure {
-    margin: 0;
-    text-align: center;
+* --- TIPOGRAFÍA Y ESPACIADO ESTRUCTURAL --- */
+
+/* Base para párrafos y listas */
+p, ul, ol {
+    line-height: 1.7; /* Mejora la legibilidad dentro del mismo bloque */
+    margin-bottom: 1.5rem; /* Reemplaza semánticamente al <br> */
 }
 
-figcaption {
-    font-size: 0.8rem;
-    margin-top: 10px;
-    color: var(--accent);
-} */
+/* Espaciado interno de los ítems de lista */
+li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+/* Prevención de desbordamientos: 
+   Elimina el margen extra si el párrafo o lista es el último elemento de su contenedor */
+article p:last-child, 
+article ul:last-child, 
+article ol:last-child {
+    margin-bottom: 0;
+}
+
+/* Ajuste específico para el texto de las referencias académicas */
+.academic-ref p {
+    margin-bottom: 0; /* Mantiene la caja compacta */
+    font-size: 0.9rem;
+}
+
+.slide {
+    width: 85%;
+    max-width: 1100px;
+    height: 80vh;
+    padding: 40px;
+    border-radius: 8px;
+    background: var(--card-bg);
+    border-top: 4px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 { color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 10px; }
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.academic-ref {
+    font-size: 0.85rem;
+    padding: 15px;
+    background: #141715;
+    border-left: 3px solid var(--accent);
+    margin-top: auto;
+}
 
 /* Estilo específico para el diagrama de Node solicitado */
 .node-diagram {
